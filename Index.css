@@ -11,7 +11,7 @@
                             /* Police */
 
 
-{
+*{
     outline: solid 1px black;
 }
 
@@ -23,8 +23,8 @@ body{
     margin: 0px;
 }
 
-#Logo, #banniere, .section_hebergements, .activite, footer{
-    margin: 30px 30px 10px 30px;
+#Logo, #banniere, section, .activite, footer{
+    margin: 30px 40px 30px 40px;
 }
                         /* Mise en page */
 
@@ -85,7 +85,7 @@ nav a:hover{
     height: 15px;
     width: 10px;
     padding: 15px;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 15px 0px 0px 15px;
     background-color: rgba(206, 206, 206, 0.884);
 }
 
@@ -96,7 +96,7 @@ nav a:hover{
     color: white;
     padding: 15px;
     font-weight: 600;
-    border-radius: 0px 10px 10px 0px;  
+    border-radius: 0px 15px 15px 0px;  
     text-decoration: none;
     font-size: 0.85em;
 }
@@ -163,18 +163,131 @@ nav a:hover{
     padding: 5px;
 }
                         /* Mise en page de la banniere */
-                        /* mise en page de la section Hébergements*/           
-                        
-                        
+                        /* mise en page de la section Hébergements*/     
+        /* mise en page d'article'*/ 
+.section_hebergements{
+     display:flex;
+     grid-gap: 50px;
+}
+.section_hebergements h1{
+    font-size: 20px;
+    font-weight: 900px;
+    
+}
+.section_hebergements h2{
+    font-size: 16px;
+    margin-left: 10px;
+}
+.section_hebergements p{
+    font-size: 12px;
+    margin-left: 10px;
+    color:grey;
+}
+.etoile_hebergement img{
+    height: 15px;
+    position: relative;
+    left: 18px;
+}
+
+.section_hebergements a{
+    text-decoration: none;
+    color: black;
+}
+
+article, aside{
+    background-color: rgba(207, 207, 207, 0.548);
+    border-radius:20px 20px;
+    padding: 20px 40px 40px 40px;
+}
+.hebergement_ligne_1,.hebergement_ligne_2{
+    display:flex;
+    grid-gap: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.hebergement_1, .hebergement_2, .hebergement_3, .hebergement_4,.hebergement_5, .hebergement_6{
+    border-radius: 20px 20px;
+    padding: 0px 5px 5px 5px;
+    background-color: white;
+    box-sizing: border-box;
+    height: 300px;
+    width: 380px;
+}
+
+.image_hotel img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    width: 600px;
+    max-width: 100%;
+    height: 200px;
+    border-radius: 15px 20px 0px 0px;
+}
 
 
+.description_hebergement h2{
+    margin: 20px 0px 0px 20px;
+}
+.description_hebergement p{
+    margin: 4px 0px 10px 20px;
+}
+
+        /* mise en page d'article'*/ 
+        /* mise en page d'aside'*/ 
+
+.titre_aside{
+    display: flex;
+    justify-content: space-between;
+}
+.titre_aside img{
+    height: 20px;
+    margin-top: 22px;
+}
+
+.description_populaire h2{
+    margin: 20px 0px 0px 20px;
+}
+.description_populaire p{
+    margin: 10px 0px 0px 20px;
+}
+
+.populaire_1, .populaire_2, .populaire_3{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    border-radius: 20px 20px;
+    padding: 0px 5px 5px 5px;
+    background-color: white;
+    box-sizing: border-box;
+    height: 180px;
+    width: 380px;
+}
+
+.image_populaire img{
+    
+    padding: 5px 5px 0px 0px;
+    width: 170px;
+    max-width: 100%;
+    height: 170px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.etoile_populaire img{
+    position: relative;
+    top: 60px;
+    left: 20px;
+    height: 15px;
+}
+
+.etoile_populaire_2 img{
+    position: relative;
+    top: 65px;
+    left: 20px;
+    height: 15px;
+}
 
 
-
-
-
-
-
-
-                        
+        /* mise en page d'aside'*/ 
                         /* mise en page de la section Hébergements*/
