@@ -23,7 +23,7 @@ body{
     margin: 0px;
 }
 
-#Logo, #banniere, section, .activite{
+#Logo, #banniere,section, .activite{
     margin: 30px 40px 30px 40px;
 }
                         /* Mise en page */
@@ -39,7 +39,7 @@ header{
 }
 
 #Logo img{
-    height: 60px;
+    height: 50px;
 }
 
 nav{
@@ -68,12 +68,12 @@ nav a:hover{
 
 #banniere h1{
     font-size: 20px;
-    font-weight: 900px;
+    font-weight:bold;
 }
 
 #banniere h2{
     font-size: 15px;
-    font-weight: 200;
+    font-weight: 400px;
     color: rgb(92, 91, 91);
 }
 
@@ -84,7 +84,7 @@ nav a:hover{
 .champ_recherche img{
     height: 15px;
     width: 10px;
-    padding: 15px;
+    padding: 10px;
     border-radius: 15px 0px 0px 15px;
     background-color: rgba(206, 206, 206, 0.884);
 }
@@ -94,52 +94,79 @@ nav a:hover{
     text-align: center;
     vertical-align: middle;
     color: white;
-    padding: 15px;
+    padding: 10px;
     font-weight: 600;
-    border-radius: 0px 15px 15px 0px;  
+    border-radius: 0px 10px 10px 0px;  
     text-decoration: none;
     font-size: 0.85em;
 }
 
 .champ_recherche{
     display: flex;
-    margin-top: 12px;
+    margin-top: 10px;
 }
-
 
 .filtre{
     display: flex;
-    grid-gap: 3em;
     margin-top: 20px;
-    font-size: 12px;
+}
+.filtre_icone{
+    display: flex;
 }
 
-.filtre_0, .filtre_1, .filtre_2, .filtre_3, .filtre_4{
-    padding-right: 20px;
-    display: flex;
+.filtre_0{
+    margin-right: 30px;
+    margin-top: 5px;
 }
 
 .filtre a{
     text-decoration: none;
     color: black;
-    font-weight: 700;
-    align-items: center;
-    margin:auto;
+    font-weight: bold;
+    display: flex;
 }
 
-.filtre img{
-    position:relative;
-    right: 1.5px;
-    height: 1.7em;
-    width: 1.5em;
-    padding: 10px;
-    background-color: #deebff;
-    border-radius: 30px;
+.filtre_1, .filtre_2, .filtre_3{
+    margin-right: 30px;
+    border-radius: 20px 20px;
+    border: 1px solid rgb(179, 179, 179);
+    background-color: white;
+    box-sizing: content-box;
+    height: 28px;
+    width: 180px;
 }
 
-.filtre_1, .filtre_2, .filtre_3, .filtre_4{
-    border:  1px solid rgba(155, 155, 155, 0.541);
-    border-radius: 55px 60px;
+.filtre_4{
+    margin-right: 30px;
+    border-radius: 20px 20px;
+    border: 1px solid rgb(179, 179, 179);
+    background-color: white;
+    box-sizing: content-box;
+    height: 28px;
+    width: 230px;
+}
+
+.filtre_1 p, .filtre_2 p, .filtre_3 p, .filtre_4 p{
+    position: relative;
+    left: 20px;
+    bottom: 10px
+}
+
+.filtre_1:hover,.filtre_2:hover,.filtre_3:hover,.filtre_4:hover{
+    background-color: #DEEBFF;
+}
+
+.filtre_1 img, .filtre_2 img, .filtre_3 img, .filtre_4 img{
+    float:inline-start;
+    position: relative;
+    bottom:1px;
+    right: 1px;
+    width: 20px;
+    background-color:#DEEBFF;
+    max-width: 100%;
+    height: 16px;
+    border-radius: 20px;
+    padding: 7px;
 }
 
 .info{
@@ -147,7 +174,7 @@ nav a:hover{
     margin-top: 20px;
 }
 
-#banniere p{
+.info p{
     color: grey;
     font-size: 15px;
     padding-left: 10px;
@@ -201,25 +228,23 @@ article, aside{
 }
 .hebergement_ligne_1,.hebergement_ligne_2{
     display:flex;
-    grid-gap: 40px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
 .hebergement_1, .hebergement_2, .hebergement_3, .hebergement_4,.hebergement_5, .hebergement_6{
     border-radius: 20px 20px;
-    padding: 0px 5px 5px 5px;
+    padding: 0.5px 5px 5px 5px;
     background-color: white;
     box-sizing: border-box;
     height: 300px;
     width: 380px;
+    margin-right: 40px;
 }
 
 .image_hotel img{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
+    margin: 5px auto 20px auto;
     width: 600px;
     max-width: 100%;
     height: 200px;
@@ -228,7 +253,7 @@ article, aside{
 
 
 .description_hebergement h2{
-    margin: 20px 0px 0px 20px;
+    margin: 0px 0px 0px 20px;
 }
 .description_hebergement p{
     margin: 4px 0px 10px 20px;
@@ -253,7 +278,7 @@ article, aside{
     margin: 10px 0px 0px 20px;
 }
 
-.populaire_1, .populaire_2, .populaire_3{
+.populaire_1 a , .populaire_2 a, .populaire_3 a{
     display: flex;
     margin-top: 10px;
     margin-bottom: 60px;
@@ -293,6 +318,7 @@ article, aside{
 .activite h1{
     font-size: 20px;
 }
+
 .activite img{
     height: 150px;
     border-radius: 15px 15px 0px 0px;
@@ -306,12 +332,16 @@ article, aside{
 .activite{
     display: flex;
     margin:0px;
-    grid-gap: 40px;
+    grid-gap: 45px;
 }
 
+.activite a{
+    text-decoration: none;
+}
 .activite p{
     padding: 0px 0px 20px 15px;
     font-weight: bold;
+    color: black;
 }
 
 .activite_1, .activite_4{
@@ -393,7 +423,7 @@ article, aside{
 footer{
     display: flex; 
     padding-left: 50px;
-    background-color: rgb(202, 202, 202);
+    background-color: rgba(207, 207, 207, 0.548);
     padding-bottom: 60px;
     grid-gap: 400px;
     padding-top: 30px;
@@ -407,8 +437,129 @@ footer a{
     padding-top: 15px;
 }
 
+footer a:hover{
+    text-decoration: underline;
+}
+
 footer h1{
     font-size: 18px;
+}
+
+
+@media screen and (max-width: 1280px){
+
+    #bloc_page{
+        width: auto;
+    }
+
+    .filtre{
+        width: auto;
+        flex-direction: column;
+    }
+
+    .filtre_icone{
+        flex-direction: column;
+
+        }
+
+    .section_hebergements{
+        background-color: #F2F2F2;
+        flex-direction: column;
+    }
+    
+    section{
+        margin: 0px;
+    }
+
+    article{
+        background-color: #F2F2F2;
+    }
+
+    aside{
+        width:auto;
+        margin: 0px;
+        border-radius: 0px;
+    }
+
+    .populaire_1 a , .populaire_2 a, .populaire_3 a{ 
+        margin: 15px 0px 15px 5px;
+        width: 400px;
+        height: 150px;
+    }
+    .image_populaire img{ 
+        height: 140px;
+    }
+    .etoile_populaire_2{
+        position: relative;
+        bottom: 20px;
+    }
+
+    .populaire_1 p , .populaire_2 p, .populaire_3 p{ 
+        font-size: 15px;
+    }
+
+    article{
+        order: 2;
+    }
+
+    .section_hebergements{
+        margin-bottom: 0px;
+    }
+
+    .hebergement_ligne_1{
+        flex-direction: column;
+        grid-gap: 10px;
+    }
+    
+    .hebergement_ligne_2{
+        flex-direction: column;
+        grid-gap: 10px;
+    }
+
+    .image_hotel img{
+        height: 150px;
+        margin-bottom: 8px;
+    }
+
+    .hebergement_1, .hebergement_2, .hebergement_3, .hebergement_4,.hebergement_5, .hebergement_6{
+        height: 230px;
+    }
+
+    .section_activite{
+        margin: 0px 20px 20px 40px;
+    }
+
+    .activite{
+        flex-direction: column;
+    }
+
+    .activite_2, .activite_3, .activite_5, .activite_6{
+        height: 230px;
+        width: 380px;
+    }
+
+    .activite_1, .activite_4{
+        height: 230px;
+        width: 380px;
+    }
+
+    .activite_2 img, .activite_3 img, .activite_5 img, .activite_6 img{
+        height: 180px;
+        width: 380px;
+        margin-bottom: 0px;
+    }
+
+    .activite_1 img, .activite_4 img {
+        height: 180px;
+        width: 420px;
+        margin-bottom: 0px;
+    }
+
+    footer{
+        flex-direction: column;
+        grid-gap: 30px;
+    }
+
 }
 
                          /* mise en page du footer*/                      
