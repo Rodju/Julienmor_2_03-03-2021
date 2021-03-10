@@ -10,7 +10,8 @@
 }
                             /* Police */
 
-
+                            
+                            
 {
     outline: solid 1px black;
 }
@@ -23,8 +24,8 @@ body{
     margin: 0px;
 }
 
-#Logo, #banniere,section, .activite{
-    margin: 30px 40px 30px 40px;
+#Logo, #banniere, section, .activite{
+    margin: 30px 50px 15px 40px;
 }
                         /* Mise en page */
 
@@ -44,13 +45,33 @@ header{
 
 nav{
     display: flex;
-    list-style-type: none;
 }
 
+nav{
+    display: flex;
+    list-style-type: none;
+    padding: 43px 50px;
+}
 
+.nav_phone{
+    flex-direction: row;
+    display: flex;
+}
+
+.nav_2 a{
+    color: black;
+}
+
+.nav_1 a {
+    color: #0065fc;
+}
+
+.nav_3 a{
+    font-weight: bold;
+    color:#0065fc;
+}
 nav a{
     text-decoration: none;
-    color: #0065fc;
     padding: 40px 50px;
 }
 
@@ -68,7 +89,6 @@ nav a:hover{
 
 #banniere h1{
     font-size: 20px;
-    font-weight:bold;
 }
 
 #banniere h2{
@@ -82,9 +102,11 @@ nav a:hover{
 }
 
 .champ_recherche img{
-    height: 15px;
-    width: 10px;
-    padding: 10px;
+    position: relative;
+    border: 1px solid rgb(173, 173, 173);
+    height: 18px;
+    width: 14px;
+    padding: 14px;
     border-radius: 15px 0px 0px 15px;
     background-color: rgba(206, 206, 206, 0.884);
 }
@@ -94,13 +116,19 @@ nav a:hover{
     text-align: center;
     vertical-align: middle;
     color: white;
-    padding: 10px;
+    padding: 15px;
     font-weight: 600;
-    border-radius: 0px 10px 10px 0px;  
+    border-radius: 0px 15px 15px 0px;  
     text-decoration: none;
     font-size: 0.85em;
 }
 
+input{
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 10px;
+    border: 1px solid rgb(173, 173, 173)
+}
 .champ_recherche{
     display: flex;
     margin-top: 10px;
@@ -132,7 +160,7 @@ nav a:hover{
     border: 1px solid rgb(179, 179, 179);
     background-color: white;
     box-sizing: content-box;
-    height: 28px;
+    height: 35px;
     width: 180px;
 }
 
@@ -142,14 +170,14 @@ nav a:hover{
     border: 1px solid rgb(179, 179, 179);
     background-color: white;
     box-sizing: content-box;
-    height: 28px;
+    height: 35px;
     width: 230px;
 }
 
 .filtre_1 p, .filtre_2 p, .filtre_3 p, .filtre_4 p{
     position: relative;
     left: 20px;
-    bottom: 10px
+    bottom: 7px
 }
 
 .filtre_1:hover,.filtre_2:hover,.filtre_3:hover,.filtre_4:hover{
@@ -159,12 +187,12 @@ nav a:hover{
 .filtre_1 img, .filtre_2 img, .filtre_3 img, .filtre_4 img{
     float:inline-start;
     position: relative;
-    bottom:1px;
-    right: 1px;
-    width: 20px;
+    bottom: 1px;
+    right: 2px;
+    width: 28px;
     background-color:#DEEBFF;
     max-width: 100%;
-    height: 16px;
+    height: 22px;
     border-radius: 20px;
     padding: 7px;
 }
@@ -445,6 +473,10 @@ footer h1{
     font-size: 18px;
 }
 
+                         /* mise en page du footer*/   
+                         
+                         
+
 
 @media screen and (max-width: 1280px){
 
@@ -452,21 +484,64 @@ footer h1{
         width: auto;
     }
 
+    #logo img{
+        position: absolute;
+    }
+
+    nav{
+        flex-direction: column-reverse;
+    }
+
+    .nav_phone{
+        display: flex;
+        position: relative;
+        right: 250px;
+        top: 50px;
+        padding-bottom: 10px;
+        border-bottom: solid 4px rgb(212, 212, 212)
+    }
+
+    .nav_1 a{
+        padding: 0px 80px 10px 80px;
+        }
+
+    .nav_2 a{
+        padding: 0px 80px 10px 40px
+    }
+
+    .nav_phone a:hover{
+        border-top: none;
+        border-bottom: 4px solid #0065fc;
+    }
+    .nav_3 a:hover{
+        border-top: none;
+    }
+
+    .nav_3 a{
+        margin-left: 30px;
+    }
+
+
     .filtre{
         width: auto;
         flex-direction: column;
     }
 
     .filtre_icone{
-        flex-direction: column;
+        display: inline-block;
+    }
 
-        }
+    .filtre_1 , .filtre_2, .filtre_3, .filtre_4{
+        margin-top: 10px;
+    }
+
 
     .section_hebergements{
         background-color: #F2F2F2;
         flex-direction: column;
     }
-    
+
+
     section{
         margin: 0px;
     }
@@ -560,7 +635,5 @@ footer h1{
         grid-gap: 30px;
     }
 
-}
-
-                         /* mise en page du footer*/                      
+}               
                         
