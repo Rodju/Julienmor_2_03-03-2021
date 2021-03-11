@@ -1,0 +1,47 @@
+header{
+    display:flex;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+#Logo img{
+    height: 50px;
+}
+
+
+nav{
+    display: flex;
+}
+
+nav{
+    display: flex;
+    list-style-type: none;
+    padding: 43px 50px;
+}
+
+.nav_phone{
+    flex-direction: row;
+    display: flex;
+}
+
+.nav_2 a{
+    color: black;
+}
+
+.nav_1 a {
+    color: #0065fc;
+}
+
+.nav_3 a{
+    font-weight: bold;
+    color:#0065fc;
+}
+nav a{
+    text-decoration: none;
+    padding: 40px 50px;
+}
+
+nav a:hover{
+    border-top: 10px solid #0065fc;
+    border-width: 5px;
+}

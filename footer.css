@@ -1,0 +1,25 @@
+
+footer{
+    display: flex; 
+    padding-left: 50px;
+    background-color: rgba(207, 207, 207, 0.548);
+    padding-bottom: 60px;
+    grid-gap: 400px;
+    padding-top: 30px;
+}
+
+footer a{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    color:rgb(77, 77, 77);
+    padding-top: 15px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer h1{
+    font-size: 18px;
+}

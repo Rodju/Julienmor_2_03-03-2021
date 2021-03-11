@@ -1,0 +1,108 @@
+.activite h1{
+    font-size: 20px;
+}
+
+.activite img{
+    height: 150px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.section_activite{
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+.activite{
+    display: flex;
+    margin:0px;
+    grid-gap: 45px;
+}
+
+.activite a{
+    text-decoration: none;
+}
+.activite p{
+    padding: 0px 0px 20px 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.activite_1, .activite_4{
+    box-sizing:border-box;
+    height: 550px;
+    width: 440px;
+    background-color:white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgb(168, 168, 168);
+}
+.activite_1 img, .activite_4 img{
+    box-sizing:border-box;
+    height: 500px;
+    width: 1000px;
+    max-width: 100%;
+    background-color:white;
+}
+
+.activite_2{
+    background-color:white;
+    box-shadow: 5px 5px 5px rgb(168, 168, 168);
+    border-radius: 15px;
+    height: 300px;
+    width: 400px;
+}
+.activite_2 img, .activite_3 img{
+    box-sizing:border-box;
+    height: 250px;
+    width: 400px;
+    max-width: 100%;
+    background-color:white;
+}
+
+.activite_3{
+    margin-top: 50px;
+    background-color:white;
+    box-shadow: 5px 5px 5px rgb(168, 168, 168);
+    border-radius: 15px;
+    height: 200px;
+    width: 400px;
+}
+
+.activite_3 img{
+    box-sizing:border-box;
+    height: 150px;
+    width: 400px;
+    max-width: 100%;
+    background-color:white;
+}
+
+.activite_5{
+    background-color:white;
+    box-shadow: 5px 5px 5px rgb(168, 168, 168);
+    border-radius: 15px;
+    height: 250px;
+    width: 400px;
+}
+.activite_5 img{
+    box-sizing:border-box;
+    height: 200px;
+    width: 400px;
+    max-width: 100%;
+    background-color:white;
+}
+
+.activite_6{
+    margin-top: 50px;
+    background-color:white;
+    box-shadow: 5px 5px 5px rgb(168, 168, 168);
+    border-radius: 15px;
+    height: 250px;
+    width: 400px;
+}
+
+.activite_6 img{
+    box-sizing:border-box;
+    height: 200px;
+    width: 400px;
+    max-width: 100%;
+    background-color:white;
+}

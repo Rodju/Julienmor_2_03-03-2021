@@ -1,0 +1,124 @@
+.section_hebergements{
+    display:flex;
+    grid-gap: 70px;
+}
+.section_hebergements h1{
+   font-size: 20px;
+   font-weight: 900px;
+   
+}
+.section_hebergements h2{
+   font-size: 16px;
+   margin-left: 10px;
+}
+.section_hebergements p{
+   font-size: 12px;
+   margin-left: 10px;
+   color:grey;
+}
+.etoile_hebergement img{
+   height: 15px;
+   position: relative;
+   left: 18px;
+}
+
+.section_hebergements a{
+   text-decoration: none;
+   color: black;
+}
+
+article, aside{
+   background-color: rgba(207, 207, 207, 0.548);
+   border-radius:20px 20px;
+   padding: 20px 55px 0px 50px;
+}
+.hebergement_ligne_1,.hebergement_ligne_2{
+   display:flex;
+   margin-top: 35px;
+   margin-bottom: 40px;
+   grid-gap: 65px;
+}
+
+.hebergement_1, .hebergement_2, .hebergement_3, .hebergement_4,.hebergement_5, .hebergement_6{
+   border-radius: 20px 20px;
+   padding: 0.5px 5px 0px 5px;
+   background-color: white;
+   box-sizing: border-box;
+   height: 250px;
+   width: 330px;
+   box-shadow: 5px 5px 5px rgb(168, 168, 168);
+}
+
+.image_hotel img{
+   display: block;
+   margin: 5px auto 10px auto;
+   width: 590px;
+   max-width: 100%;
+   height: 150px;
+   border-radius: 15px 20px 0px 0px;
+}
+
+
+.description_hebergement h2{
+   margin: 0px 0px 0px 20px;
+}
+.description_hebergement p{
+   margin: 4px 0px 10px 20px;
+}
+
+
+.titre_aside{
+    display: flex;
+    justify-content: space-between;
+}
+.titre_aside img{
+    height: 20px;
+    margin-top: 22px;
+}
+
+.description_populaire h2{
+    margin: 20px 0px 0px 20px;
+}
+.description_populaire p{
+    margin: 10px 0px 0px 20px;
+}
+
+.populaire_1 a , .populaire_2 a, .populaire_3 a{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    border-radius: 20px 20px;
+    padding: 0px 5px 5px 5px;
+    background-color: white;
+    box-sizing: border-box;
+    height: 180px;
+    width: 410px;    
+    box-shadow: 5px 5px 5px rgb(168, 168, 168);
+}
+
+.image_populaire img{
+    
+    padding: 5px 5px 0px 0px;
+    width: 190px;
+    max-width: 100%;
+    height: 170px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.etoile_populaire img{
+    position: relative;
+    top: 80px;
+    left: 20px;
+    height: 15px;
+}
+
+.etoile_populaire_2 img{
+    position: relative;
+    top: 65px;
+    left: 20px;
+    height: 15px;
+}
+
+article a:hover, aside a:hover, .section_activite p:hover{
+    color:#0065fc;
+}
