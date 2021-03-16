@@ -1,5 +1,5 @@
 
-*{
+{
     outline: solid 1px black;
 }
 
@@ -24,7 +24,7 @@ body{
     margin: 0px;
 }
 
-#Logo, #banniere, section, .activite{
+#banniere, section, .activite{
     margin: 30px 50px 15px 40px;
 }
                         /* Mise en page*/
@@ -33,47 +33,10 @@ body{
 
 
                         /* Responsive téléphone*/
-@media screen and (max-width: 812px){
+@media screen and (max-width: 821px){
 
     #bloc-page{
         width: auto;
-    }
-
-    #logo img{
-        position: absolute;
-    }
-
-    nav{
-        flex-direction: column-reverse;
-    }
-
-    .nav_phone{
-        display: flex;
-        position: relative;
-        right: 250px;
-        top: 50px;
-        padding-bottom: 10px;
-        border-bottom: solid 4px rgb(212, 212, 212)
-    }
-
-    .nav_1 a{
-        padding: 0px 80px 10px 80px;
-        }
-
-    .nav_2 a{
-        padding: 0px 100px 10px 40px
-    }
-
-    .nav_phone a:hover{
-        border-top: none;
-        border-bottom: 4px solid #0065fc;
-    }
-    .nav_3 a:hover{
-        border-top: none;
-    }
-
-    .nav_3 a{
-        margin-left: 30px;
     }
 
     .champ_recherche{

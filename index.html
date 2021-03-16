@@ -10,7 +10,6 @@
         <link rel="stylesheet" href="activite.css">
         <link rel="stylesheet" href="footer.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" media="screen and (max-width: 821px)" href="phone.css"/>
         <title>Reservia</title> 
     </head>
 
@@ -27,12 +26,12 @@
                     <div id="Logo">
                          <img src="Reservia@3x.png" alt="logo">
                     </div>
-                </a>
+                </a> 
 
-                <nav>
-                        <div class="nav_phone"><div class="nav_1"><a href="#Hébergements">Hébergements</a></div>
-                        <div class="nav_2"><a href="#Activités">Activités</a></div></div>
-                        <div class="nav_3"><a href="#">S'inscrire</a></div>
+                <nav class="flex">
+                  <a href="#Hébergements" class="accomodation">Hébergements</a>
+                  <a href="#Activités" class="activities">Activités</a>
+                  <a href="#" class="subscribtion">S'inscrire</a>
                 </nav>
 
             </header>
@@ -54,7 +53,7 @@
                         <div class="filtre">
                             <div class="filtre_0"><a href="#">Filtres</a></div>
                             <div class="filtre_icone">
-                            <p><a href="#"><div class="filtre_1"><img src="image/Tempmoney-bill-wave.svg" alt="money">Economique</p></a></div>
+                            <a class="filtre_1 flex"><img src="image/Tempmoney-bill-wave.svg" alt="money"><p>Economique</p></a>
                             <p><a href="#"><div class="filtre_2"><img src="image/Tempchild.svg" alt="child">Familial</p></a></div>
                             <p><a href="#"><div class="filtre_3"><img src="image/Tempheart.svg" alt="heart">Romantique</p></a></div>
                             <p><a href="#"><div class="filtre_4"><img src="image/Tempdog.svg" alt="dog">Animaux autorisés</p></a></div>
@@ -78,10 +77,11 @@
                             <h1 id="Hébergements">Hébergements à Marseille</h1>
 
                             <div class="hebergement_ligne_1">
- 
-                                <a href="#">
+                                <a href="#" class="cards p-2">
                                  <div class="hebergement_1">
-                                   <div class="image_hotel"><img src="image/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="hotel"></div>
+                                   <div class="image_hotel">
+                                     <!-- <img src="image/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="hotel" /> -->
+                                    </div>
                                     <div class="description_hebergement">
                                        <h2>Auberge La Cannebière</h2>
                                         <p>Nuit à partir de 25€</p>

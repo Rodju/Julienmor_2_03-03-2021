@@ -1,50 +1,82 @@
-jhdeozdej
-
-
-header{
-    display:flex;
-    justify-content: space-between;
-    margin: 0px;
-}
-
 #Logo img{
     height: 50px;
-}
-
-
-nav{
-    display: flex;
+    position: absolute;
+    padding: 30px 50px 15px 40px;
 }
 
 nav{
     display: flex;
-    list-style-type: none;
-    padding: 43px 50px;
+    justify-content: flex-end;
 }
 
-.nav_phone{
-    flex-direction: row;
-    display: flex;
-}
-
-.nav_2 a{
-    color: black;
-}
-
-.nav_1 a {
-    color: #0065fc;
-}
-
-.nav_3 a{
-    font-weight: bold;
-    color:#0065fc;
-}
 nav a{
     text-decoration: none;
     padding: 40px 50px;
+    margin-top: 3px;
+}
+
+nav a:first-child{
+    color:#0065fc;
+}
+
+nav a:nth-child(2){
+    color: black;
+}
+
+nav a:nth-child(3){
+    color: #0065fc;
+    font-weight: bold;
 }
 
 nav a:hover{
-    border-top: 10px solid #0065fc;
-    border-width: 5px;
+    border-top: 4px solid #0065fc;
+    margin-top: -1px;
+}
+
+
+
+
+@media screen and (max-width: 768px){
+
+nav{
+flex-wrap: wrap;
+}
+.accomodation{order: 2;}
+.activities {order: 3;}
+
+nav a{
+    display: flex;
+    margin-top: -1px;
+    margin-bottom: 6px;
+}
+
+nav a:hover, nav a:hover:nth-child(3){
+    border-top: none;
+}
+
+nav a:hover:nth-child(2), nav a:hover:nth-child(1){
+    border-bottom: 3px solid #0065fc;
+    margin-bottom: 0px;
+}
+
+nav a:nth-child(1), nav a:nth-child(2){
+    border-bottom: 3px solid rgb(206, 206, 206) ;
+    margin-bottom: 0px;
+}
+
+nav.flex a {
+    box-sizing: border-box;
+    width: 50%;
+    margin-top: 10px;
+    padding: 25px 0px 15px 0px;
+    justify-content: center;
+    
+}
+
+nav.flex a.subscribtion {
+    order: 1;
+    width: 51%; 
+    justify-content: flex-end;
+    padding-right: 30px;
+}
 }
