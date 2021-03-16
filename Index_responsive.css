@@ -39,20 +39,7 @@ body{
         width: auto;
     }
 
-    .champ_recherche{
-        padding-top: 10px;
-        padding-bottom: 50px
-    }
-    .filtre_0{
-        position:absolute;
-        top: 340px;
-    }
 
-    .filtre_icone{
-        flex-wrap: wrap;
-        font-size: 14px;
-        row-gap: 10px;      
-    }
 
     .section_hebergements{
         background-color: #F2F2F2;
@@ -142,11 +129,6 @@ body{
         height: 180px;
         width: 420px;
         margin-bottom: 0px;
-    }
-
-    footer{
-        flex-direction: column;
-        grid-gap: 30px;
     }
 
 }               
