@@ -3,18 +3,18 @@
 
 ## TODO
 
-* ranger les fichier dans un dossier src
-* supprimer les majuscules des noms dossiers
-* background url cover
-* herbergement: flex + wrap
-* activité : grid
-* image : adapté les tailles avec la taille de l'écran (chargement)
 
-* stop position relative (c le mal)
 * div != de class
 * moins de div possible
-
 * penser au mobile first
-* essayer outil grid firefox
 * ligne de commande linux sous window
 * responsive utiliser les break point de bootstrap
+*  extension vscode prettier
+* extension NBSP - VS code
+
+* 19/03/2021
+
+* Finir la partis activity + responsive
+* aligner correctement le code HTML
+* mettre en ligne avec GITHUB page (tuto)
+* si j'ai mon html sans image et mise en page (voir chemin absolu et relatif)

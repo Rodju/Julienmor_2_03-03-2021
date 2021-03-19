@@ -1,14 +1,14 @@
 article, aside{
    background-color: rgba(207, 207, 207, 0.548);
    border-radius: 20px 20px;
-   padding: 20px 20px 0px 40px;
+   box-sizing: border-box;
+   padding: 25px;
 }
 article{
-   width: 65%;
+   width: 70%;
 }
 aside{
-   width: 20%;
-   padding-right: 130px;
+   width: 27%;
 }
 article a:hover, aside a:hover, .section_activite p:hover{
    color:#0065fc;
@@ -24,8 +24,8 @@ article a:hover, aside a:hover, .section_activite p:hover{
 }
 
 .section_accomodation h3{
-   padding-top: 170px;
-   padding-bottom: 30px;
+   padding-top: 20px;
+   padding-bottom: 20px;
 }
 
 .section_accomodation p{
@@ -45,39 +45,34 @@ article a:hover, aside a:hover, .section_activite p:hover{
 .first_star{
    margin-left: 3%;
 }
-accomodation
+
 .section_accomodation{
    display: flex;
-   gap: 3%;
+   gap: 3%; 
 }
 
-.accomodation_line_1, .accomodation_line_2{
+.accomodation{
    display: flex;
-   justify-content: space-between;
+   flex-wrap: wrap;
+   column-gap: 3.5%;
+   row-gap: 50px;
 }
 
-.accomodation_1, .accomodation_2, .accomodation_3, .accomodation_4,.accomodation_5, .accomodation_6{
+.accomodation a {
    border-radius: 20px 20px;
    padding: 0.5px 5px 0px 5px;
    box-shadow: 5px 5px 5px rgb(168, 168, 168);
    background-color: white;
    box-sizing: border-box;
-   height: 250px;
-   width: 330px;   
+   width: 31%; 
 } 
 
-.image_hotel_1, .image_hotel_2, .image_hotel_3, .image_hotel_4, .image_hotel_5, .image_hotel_6{
+.image_hotel_1, .image_hotel_2,.image_hotel_3, .image_hotel_4,.image_hotel_5, .image_hotel_6{
+   height: 200px;
    max-width: 100%;
-   height: 60%;
    margin-top: 1%;
    border-radius: 15px 20px 0px 0px;
 }
-
-.description_accomodation{
-   height: 30%;
-   width: 100%;
-}
-
 
 .image_hotel_1{
    background: url("image/accomodation/accomodation_1_large.jpg") no-repeat;
@@ -116,34 +111,60 @@ accomodation
     height: 20px;
     margin-top: 22px;
 }
-.description_populaire h2{s
+.description_populaire h2{
     margin: 20px 0px 0px 20px;
 }
 .description_populaire p{
     margin: 10px 0px 0px 20px;
 }
 
+.description_populaire{
+   flex-grow: 1;
+}
+
 .image_populaire_1, .image_populaire_2, .image_populaire_3{
    padding: 5px 5px 0px 0px;
-   width: 50%;
+   height: 150px;
+   min-width: 35%;
+   width: 35%;
+   border-radius: 20px 0px 0px 20px;
    border-radius: 20px 0px 0px 20px;
 } 
 
-.populaire_1, .populaire_2, .populaire_3{
+.card2{
    display: flex;
    background-color: white;
    box-sizing: border-box;
-   width: 120%;   
+   width: 100%;   
    box-shadow: 5px 5px 5px rgb(168, 168, 168);
    border-radius: 20px 20px;
    padding: 5px 5px 5px 5px;
-}
-.populaire_2, .populaire_3{
-   margin-top: 10%;
+   margin-bottom: 60px;
 }
 
-.description_populaire{
-   width: 50%
+.etoile_populaire img{
+   padding-top: 70px;
+    height: 15px;
+}
+
+.etoile_populaire img{
+   padding-top: 70px;
+    height: 15px;
+}
+
+.etoile_populaire img{
+   padding-top: 70px;
+    height: 15px;
+}
+
+.etoile_populaire img{
+   padding-top: 70px;
+    height: 15px;
+}
+
+.etoile_populaire img{
+   padding-top: 70px;
+    height: 15px;
 }
 
 .etoile_populaire img{
@@ -175,71 +196,27 @@ accomodation
 
 
 
-@media screen and (max-width: 1900px){
-
-   .section_accomodation{
-      justify-content: center;
- }
-
- }
-
-
-@media screen and (min-width: 768px) and (max-width: 1420px){
-
-   .section_accomodation{
-      justify-content: space-around
-   }
-
-  article h1{
-     color: red;
-  }
-
-  .section_accomodation{
-     display: grid;
-     flex-wrap: nowrap;
-     flex-direction: row;
-  }
-   
-}
-
 
 
 @media screen and (max-width: 768px){
 
-    .section_hebergements{
-        background-color: #F2F2F2;
-        flex-direction: column;
-    }
-    .section_accomodation{
-      display: grid;
+   .section_accomodation{
+      flex-direction: column;
+      margin: 0px;
    }
-    section{
-        margin: 0px;
-    }
 
-    article{
-       width: auto;
-        background-color: #f2f2f2;
-    }
+   aside{
+      width: 100%;
+      border-radius: 0;
+   }
+   
+   article{
+      background-color: #f2f2f2;
+      order: 2;
+      width: 100%
+   }
 
-    aside{
-        width: auto;
-        margin: 0px;
-        border-radius: 0px;
-    }
-
-
-    .populaire_1 p , .populaire_2 p, .populaire_3 p{ 
-        font-size: 15px;
-    }
-
-    article{
-        order: 2;
-    }
-
-
-}               
-
-
-
-
+   .accomodation a {
+      width: 100%; 
+   } 
+}             
