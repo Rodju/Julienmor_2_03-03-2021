@@ -1,4 +1,7 @@
 
+#banniere{
+    margin: 30px 50px 15px 40px;
+}
 #banniere h1{
     font-size: 25px;
 }
@@ -32,8 +35,10 @@
     font-weight: 600;
     border-radius: 0px 15px 15px 0px;  
     text-decoration: none;
-    font-size: 0.85em;
+    font-size: 15px;
 }
+
+
 
 input{
     font-weight: bold;
@@ -46,8 +51,6 @@ input{
     margin-top: 10px;
 }
 
-
-
 .filtre{
     display: flex;
     font-size: 14px;
@@ -58,6 +61,11 @@ input{
 
 .filtre_0 p:hover{
     color: grey;
+    transition: color 0.3s;
+}
+
+.filtre_0{
+    text-decoration: none;
 }
 
 .filtre_1:hover, .filtre_2:hover, .filtre_3:hover, .filtre_4:hover{
@@ -67,7 +75,7 @@ input{
 .filtre_icone{
     display: flex;
     flex-wrap: wrap;
-    grid-gap: 10px;
+    grid-gap: 30px;
 }
 
 .filtre_icone a, .filtre_0 p{
@@ -94,8 +102,6 @@ input{
     margin-right: 20px;
 }
 
-
-
 .info{
     display: flex;
     margin-top: 20px;
@@ -116,6 +122,18 @@ input{
     border-radius: 60px 60px;
     padding: 5px;
 }
+
+
+.filtre_icone a:hover {
+    transform: scale(1.1);
+}
+.filtre_icone a{
+    transition: .2s;
+}
+
+
+
+
 
 @media screen and (max-width: 768px){
 

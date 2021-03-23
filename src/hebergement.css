@@ -1,50 +1,47 @@
+section{
+   margin: 30px 50px 15px 40px;
+}
 article, aside{
    background-color: rgba(207, 207, 207, 0.548);
    border-radius: 20px 20px;
    box-sizing: border-box;
-   padding: 25px;
+   padding: 20px 40px 20px 40px;
 }
 article{
-   width: 70%;
+   width: 72%;
 }
 aside{
-   width: 27%;
+   width: 25%;
 }
 article a:hover, aside a:hover, .section_activite p:hover{
    color:#0065fc;
+   transition: color .3s;
 }
 .section_accomodation h1{
    font-size: 20px;
    font-weight: bold;
 }
-
 .section_accomodation h2{
    font-size: 15px;
-   margin-left: 10px;
+   margin-bottom: 0px
 }
-
-.section_accomodation h3{
-   padding-top: 20px;
-   padding-bottom: 20px;
-}
-
 .section_accomodation p{
    font-size: 12px;
-   margin-left: 10px;
    color:grey;
+   margin-top: 1%;
+   margin-bottom: 1%;
 }
 .section_accomodation a{
    text-decoration: none;
    color: black;
 }
-
-.etoile_accomodation, .first_star{
-   height: 15px;
-} 
-
-.first_star{
-   margin-left: 3%;
+.description_accomodation{
+   padding: 1% 2% 1% 2%;
 }
+.etoile_accomodation{
+   height: 15px;
+   margin-bottom: 2%; 
+} 
 
 .section_accomodation{
    display: flex;
@@ -68,7 +65,7 @@ article a:hover, aside a:hover, .section_activite p:hover{
 } 
 
 .image_hotel_1, .image_hotel_2,.image_hotel_3, .image_hotel_4,.image_hotel_5, .image_hotel_6{
-   height: 200px;
+   height: 180px;
    max-width: 100%;
    margin-top: 1%;
    border-radius: 15px 20px 0px 0px;
@@ -100,6 +97,15 @@ article a:hover, aside a:hover, .section_activite p:hover{
 } 
 
 
+article a:hover {
+   transform: scale(1.05);
+   box-shadow: -1px 2px 10px 3px rgba(0, 101, 252, 0.5) inset;
+}
+article a{
+   transition: .3s;
+} 
+
+
 
 
 
@@ -111,11 +117,9 @@ article a:hover, aside a:hover, .section_activite p:hover{
     height: 20px;
     margin-top: 22px;
 }
-.description_populaire h2{
-    margin: 20px 0px 0px 20px;
-}
-.description_populaire p{
-    margin: 10px 0px 0px 20px;
+
+.description_populaire{
+   margin: 0px 0px 0px 10px;
 }
 
 .description_populaire{
@@ -125,8 +129,8 @@ article a:hover, aside a:hover, .section_activite p:hover{
 .image_populaire_1, .image_populaire_2, .image_populaire_3{
    padding: 5px 5px 0px 0px;
    height: 150px;
-   min-width: 35%;
-   width: 35%;
+   min-width: 45%;
+   width: 45%;
    border-radius: 20px 0px 0px 20px;
    border-radius: 20px 0px 0px 20px;
 } 
@@ -143,40 +147,13 @@ article a:hover, aside a:hover, .section_activite p:hover{
 }
 
 .etoile_populaire img{
-   padding-top: 70px;
+   margin-top: 35%;
     height: 15px;
 }
 
-.etoile_populaire img{
-   padding-top: 70px;
+.etoile_populaire2 img{
+   margin-top: 25%;
     height: 15px;
-}
-
-.etoile_populaire img{
-   padding-top: 70px;
-    height: 15px;
-}
-
-.etoile_populaire img{
-   padding-top: 70px;
-    height: 15px;
-}
-
-.etoile_populaire img{
-   padding-top: 70px;
-    height: 15px;
-}
-
-.etoile_populaire img{
-   padding-top: 70px;
-    height: 15px;
-}
-.etoile_populaire_2 img{
-   padding-top: 50px;
-    height: 15px;
-}
-.first_star_popular{
-   margin-left: 20px;
 }
 
 .image_populaire_1{
@@ -192,10 +169,6 @@ article a:hover, aside a:hover, .section_activite p:hover{
    background: url("image/accomodation/popular_3_large.jpg") no-repeat;
    background-size: cover;
 }
-
-
-
-
 
 
 @media screen and (max-width: 768px){
