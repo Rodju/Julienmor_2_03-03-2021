@@ -70,12 +70,11 @@ nav.flex a {
     margin-top: 10px;
     padding: 25px 0px 15px 0px;
     justify-content: center;
-    
 }
 
 nav.flex a.subscribtion {
     order: 1;
-    width: 51%; 
+    width: 51%;
     justify-content: flex-end;
     padding-right: 30px;
 }

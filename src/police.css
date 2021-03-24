@@ -1,7 +1,7 @@
-
+/* 
 {
     outline: solid 1px black;
-}
+} */
 
 @font-face {
     font-family: 'ralewayregular';
@@ -9,7 +9,6 @@
          url('police/raleway-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 body{

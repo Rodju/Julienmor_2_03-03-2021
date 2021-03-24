@@ -17,12 +17,12 @@ article a:hover, aside a:hover, .section_activite p:hover{
    color:#0065fc;
    transition: color .3s;
 }
-.section_accomodation h1{
+.section_accomodation h2{
    font-size: 20px;
    font-weight: bold;
 }
-.section_accomodation h2{
-   font-size: 15px;
+.section_accomodation h3{
+   font-size: 17px;
    margin-bottom: 0px
 }
 .section_accomodation p{
@@ -31,21 +31,26 @@ article a:hover, aside a:hover, .section_activite p:hover{
    margin-top: 1%;
    margin-bottom: 1%;
 }
+
 .section_accomodation a{
    text-decoration: none;
    color: black;
+}
+
+.section_accomodation h4{
+   padding-top: 20px;
 }
 .description_accomodation{
    padding: 1% 2% 1% 2%;
 }
 .etoile_accomodation{
    height: 15px;
-   margin-bottom: 2%; 
-} 
+   margin-bottom: 2%;
+}
 
 .section_accomodation{
    display: flex;
-   gap: 3%; 
+   gap: 3%;
 }
 
 .accomodation{
@@ -61,11 +66,11 @@ article a:hover, aside a:hover, .section_activite p:hover{
    box-shadow: 5px 5px 5px rgb(168, 168, 168);
    background-color: white;
    box-sizing: border-box;
-   width: 31%; 
-} 
+   width: 31%;
+}
 
 .image_hotel_1, .image_hotel_2,.image_hotel_3, .image_hotel_4,.image_hotel_5, .image_hotel_6{
-   height: 180px;
+   height: 200px;
    max-width: 100%;
    margin-top: 1%;
    border-radius: 15px 20px 0px 0px;
@@ -94,16 +99,16 @@ article a:hover, aside a:hover, .section_activite p:hover{
 .image_hotel_6{
    background: url("image/accomodation/accomodation_6_large.jpg") no-repeat;
    background-size: cover;
-} 
-
-
-article a:hover {
-   transform: scale(1.05);
-   box-shadow: -1px 2px 10px 3px rgba(0, 101, 252, 0.5) inset;
 }
-article a{
+
+
+.accomodation a:hover {
+   transform: scale(1.05);
+   box-shadow: 8px 8px 8px 0px rgba(0,0,0,0.24), 8px 8px 8px 0px rgba(0,0,0,0.19);
+}
+.accomodation a{
    transition: .3s;
-} 
+}
 
 
 
@@ -128,18 +133,18 @@ article a{
 
 .image_populaire_1, .image_populaire_2, .image_populaire_3{
    padding: 5px 5px 0px 0px;
-   height: 150px;
+   height: 170px;
    min-width: 45%;
    width: 45%;
    border-radius: 20px 0px 0px 20px;
    border-radius: 20px 0px 0px 20px;
-} 
+}
 
 .card2{
    display: flex;
    background-color: white;
    box-sizing: border-box;
-   width: 100%;   
+   width: 100%;
    box-shadow: 5px 5px 5px rgb(168, 168, 168);
    border-radius: 20px 20px;
    padding: 5px 5px 5px 5px;
@@ -147,12 +152,10 @@ article a{
 }
 
 .etoile_populaire img{
-   margin-top: 35%;
     height: 15px;
 }
 
 .etoile_populaire2 img{
-   margin-top: 25%;
     height: 15px;
 }
 
@@ -170,6 +173,20 @@ article a{
    background-size: cover;
 }
 
+aside a:hover {
+   transform: scale(1.05);
+   box-shadow: 8px 8px 8px 0px rgba(0,0,0,0.24), 8px 8px 8px 0px rgba(0,0,0,0.19);
+}
+aside a{
+   transition: .3s;
+}
+
+
+
+
+
+
+
 
 @media screen and (max-width: 768px){
 
@@ -178,11 +195,15 @@ article a{
       margin: 0px;
    }
 
+   .image_populaire_1, .image_populaire_2, .image_populaire_3{
+      height: 230px;
+   }
+
    aside{
       width: 100%;
       border-radius: 0;
    }
-   
+
    article{
       background-color: #f2f2f2;
       order: 2;
@@ -190,6 +211,73 @@ article a{
    }
 
    .accomodation a {
-      width: 100%; 
-   } 
-}             
+      width: 100%;
+   }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+
+
+   .section_accomodation{
+      flex-direction: column-reverse;
+      justify-items: center;
+      margin: 0px;
+      gap: 20px;
+   }
+
+   aside{
+      width : 100%;
+      border-radius: 0;
+   }
+
+    .popular{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+
+   .image_populaire_1, .image_populaire_2, .image_populaire_3{
+      height: 250px;
+   }
+
+   .popular a{
+      width: 100%;
+   }
+
+   .accomodation{
+      gap: 65px;
+   }
+   article{
+      width: 100%;
+      padding-left: 40px;
+      padding-right: 0px;
+      background-color: #f2f2f2;
+   }
+
+   .accomodation a{
+      width: 42.5%;
+   }
+
+
+
+}
+
+@media screen and (min-width: 993px) and (max-width: 1170px){
+
+
+   aside{
+      width: 35%;
+   }
+
+   article{
+      width: 70%;
+   }
+
+   .accomodation{
+      column-gap: 10%;
+   }
+
+   .accomodation a {
+      width: 45%;
+   }
+}
