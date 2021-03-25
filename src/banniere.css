@@ -2,6 +2,10 @@
     margin: 30px 50px 15px 40px;
 }
 
+.phone_button{
+    visibility: hidden;
+}
+
 #banniere h1{
     font-size: 25px;
 }
@@ -17,12 +21,12 @@
 
 .champ_recherche img{
     position: relative;
-    border: 1px solid rgb(173, 173, 173);
-    height: 18px;
+    border: 1px solid rgba(207, 207, 207, 0.548);
+    height: 19px;
     width: 12px;
     padding: 14px;
     border-radius: 15px 0px 0px 15px;
-    background-color: rgba(206, 206, 206, 0.884);
+    background-color: rgba(207, 207, 207, 0.548);
 }
 
 .button{
@@ -48,15 +52,13 @@
 .button:active{
     color:white;
 }
-
-
-
 input{
     font-weight: bold;
     font-size: 15px;
     padding-left: 10px;
-    border: 1px solid rgb(173, 173, 173)
+    border: 1px solid  rgba(207, 207, 207, 0.548);
 }
+
 .champ_recherche{
     display: flex;
     margin-top: 10px;
@@ -146,7 +148,22 @@ input{
 
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
+
+
+    .button{
+        display: none;
+    }
+
+    .phone_button img{
+        visibility: visible;
+        float: right;
+        position: relative;
+        right: 10px;
+        border-radius: 15px;
+        width: auto;
+        background-color: #0065fc;
+    }
 
     .champ_recherche{
         padding-top: 10px;
@@ -162,7 +179,7 @@ input{
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 992px){
+@media screen and (min-width: 768px) and (max-width: 992px){
 
 
     .filtre{

@@ -95,31 +95,20 @@
     border-radius: 15px 15px 0px 0px;
 }
 
+.image_activity_1, .image_activity_2, .image_activity_3, .image_activity_4, .image_activity_5, .image_activity_6{
+    position: relative;
+    overflow: hidden;
+}
 
-
-.image_activity_1{
-    background: url("image/activity/activity_large_1.jpg") no-repeat;
-    background-size: cover;
-}
- .image_activity_2{
-    background:url("image/Activity/activity_2_large.jpg") no-repeat;
-    background-size: cover;
-}
- .image_activity_3{
-    background: url("image/activity/activity_3_large.jpg") no-repeat;
-    background-size: cover;
-}
- .image_activity_4{
-    background: url("image/activity/activity_4_large.jpg") no-repeat;
-    background-size: cover;
-}
- .image_activity_5{
-    background: url("image/activity/activity_5_large.jpg") no-repeat;
-    background-size: cover;
-}
- .image_activity_6{
-    background: url("image/activity/activity_6_large.jpg") no-repeat;
-    background-size: cover;
+ .image_activity_1 img, .image_activity_2 img, .image_activity_3 img, .image_activity_4 img, .image_activity_5 img, .image_activity_6 img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    max-height: 150%;
+    max-width: 150%;
 }
 
 .activity a:hover {
@@ -132,7 +121,7 @@
 
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
 
     .activity{
         display: flex;
@@ -151,7 +140,7 @@
 
 
 
- @media screen and (min-width: 769px) and (max-width: 992px){
+ @media screen and (min-width: 768px) and (max-width: 992px){
 
 
    .activity{
@@ -178,7 +167,7 @@
         display   : flex;
         flex-wrap : wrap;
         row-gap   : 30px;
-        column-gap: 100px;
+        column-gap: 110px;
         margin-right: 0px;
     }
 

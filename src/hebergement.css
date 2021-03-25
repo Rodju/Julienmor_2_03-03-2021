@@ -1,19 +1,19 @@
 section{
    margin: 30px 50px 15px 40px;
 }
-article, aside{
+.article, aside{
    background-color: rgba(207, 207, 207, 0.548);
    border-radius: 20px 20px;
    box-sizing: border-box;
    padding: 20px 40px 20px 40px;
 }
-article{
+.article{
    width: 72%;
 }
 aside{
    width: 25%;
 }
-article a:hover, aside a:hover, .section_activite p:hover{
+.article a:hover, aside a:hover, .section_activite p:hover{
    color:#0065fc;
    transition: color .3s;
 }
@@ -76,31 +76,21 @@ article a:hover, aside a:hover, .section_activite p:hover{
    border-radius: 15px 20px 0px 0px;
 }
 
-.image_hotel_1{
-   background: url("image/accomodation/accomodation_1_large.jpg") no-repeat;
-   background-size: cover;
-}
-.image_hotel_2{
-   background: url("image/accomodation/accomodation_2_large.jpg") no-repeat;
-   background-size: cover;
-}
-.image_hotel_3{
-   background: url("image/accomodation/accomodation_3_large.jpg") no-repeat;
-   background-size: cover;
-}
-.image_hotel_4{
-   background: url("image/accomodation/accomodation_4_large.jpg") no-repeat;
-   background-size: cover;
-}
-.image_hotel_5{
-   background: url("image/accomodation/accomodation_5_large.jpg") no-repeat;
-   background-size: cover;
-}
-.image_hotel_6{
-   background: url("image/accomodation/accomodation_6_large.jpg") no-repeat;
-   background-size: cover;
+.image_hotel_1, .image_hotel_2,.image_hotel_3, .image_hotel_4,.image_hotel_5, .image_hotel_6{
+   position: relative;
+   overflow: hidden;
 }
 
+.image_hotel_1 img, .image_hotel_2 img,.image_hotel_3 img, .image_hotel_4 img,.image_hotel_5 img, .image_hotel_6 img{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   min-width: 100%;
+   min-height: 100%;
+   max-height: 150%;
+   max-width: 150%;
+}
 
 .accomodation a:hover {
    transform: scale(1.05);
@@ -125,6 +115,11 @@ article a:hover, aside a:hover, .section_activite p:hover{
 
 .description_populaire{
    margin: 0px 0px 0px 10px;
+   display: flex;
+   flex-direction: column;
+}
+.etoile_populaire{
+   margin-top: auto;
 }
 
 .description_populaire{
@@ -159,18 +154,20 @@ article a:hover, aside a:hover, .section_activite p:hover{
     height: 15px;
 }
 
-.image_populaire_1{
-   background: url("image/accomodation/popular_1_large.jpg") no-repeat;
-   background-size:cover;
+.image_populaire_1, .image_populaire_2, .image_populaire_3{
+   position: relative;
+   overflow: hidden;
 }
 
-.image_populaire_2{
-   background:url("image/accomodation/popular_2_large.jpg") no-repeat;
-   background-size: cover;
-}
-.image_populaire_3{
-   background: url("image/accomodation/popular_3_large.jpg") no-repeat;
-   background-size: cover;
+.image_populaire_1 img, .image_populaire_2 img, .image_populaire_3 img{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   min-width: 100%;
+   min-height: 100%;
+   max-height: 150%;
+   max-width: 150%;
 }
 
 aside a:hover {
@@ -188,7 +185,7 @@ aside a{
 
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
 
    .section_accomodation{
       flex-direction: column;
@@ -204,7 +201,7 @@ aside a{
       border-radius: 0;
    }
 
-   article{
+   .article{
       background-color: #f2f2f2;
       order: 2;
       width: 100%
@@ -215,7 +212,7 @@ aside a{
    }
 }
 
-@media screen and (min-width: 769px) and (max-width: 992px){
+@media screen and (min-width: 768px) and (max-width: 991px){
 
 
    .section_accomodation{
@@ -247,7 +244,7 @@ aside a{
    .accomodation{
       gap: 65px;
    }
-   article{
+   .article{
       width: 100%;
       padding-left: 40px;
       padding-right: 0px;
@@ -257,19 +254,16 @@ aside a{
    .accomodation a{
       width: 42.5%;
    }
-
-
-
 }
 
-@media screen and (min-width: 993px) and (max-width: 1170px){
+@media screen and (min-width: 992px) and (max-width: 1199px){
 
 
    aside{
       width: 35%;
    }
 
-   article{
+   .article{
       width: 70%;
    }
 

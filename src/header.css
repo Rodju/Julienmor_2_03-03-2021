@@ -4,6 +4,7 @@
     padding: 30px 50px 15px 40px;
 }
 
+
 nav{
     display: flex;
     justify-content: flex-end;
@@ -36,7 +37,7 @@ nav a:hover{
 
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
 
 nav{
 flex-wrap: wrap;
